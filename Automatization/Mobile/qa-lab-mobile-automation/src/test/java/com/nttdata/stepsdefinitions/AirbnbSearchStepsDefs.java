@@ -16,7 +16,6 @@ public class AirbnbSearchStepsDefs {
 
     @Given("que me enuentro en el login de Airbnb")
     public void que_me_enuentro_en_el_login_de_airbnb() {
-
         airbnbSearchSteps.clickClose();
     }
     @When("busco {string}")
@@ -25,6 +24,7 @@ public class AirbnbSearchStepsDefs {
     }
     @Then("muestra el texto {string}")
     public void muestra_el_texto(String text) {
+
         Assert.assertEquals(airbnbSearchSteps.getResultText(), text);
     }
 
